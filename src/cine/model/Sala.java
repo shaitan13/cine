@@ -14,7 +14,7 @@ import java.util.TreeMap;
 public class Sala {
     private Integer idSala;
     private String tipoSala;
-    private TreeMap sillas;
+    private TreeMap <Integer,Silla>sillas;
 
     public Sala(Integer idSala, String tipoSala) {
         this.idSala = idSala;
