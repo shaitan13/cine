@@ -19,11 +19,12 @@ public class Cine implements Serializable{
     private String telefono;
     private TreeMap<Integer,Sala> salas;
 
-    public Cine(String nit, String nombre, String direccion, String telefono) {
+    public Cine(String nit, String nombre, String direccion, String telefono, TreeMap<Integer,Sala> salas) {
         this.nit = nit;
         this.nombre = nombre;
         this.direccion = direccion;
         this.telefono = telefono;
+        this.salas = salas;
     }    
     
     public String getNit() {
