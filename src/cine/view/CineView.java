@@ -7,10 +7,13 @@ package cine.view;
 
 import cine.model.Cine;
 import cine.model.Sala;
+import java.awt.Dialog;
 import java.util.ArrayList;
 import java.util.TreeMap;
+import javax.swing.JDialog;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
+import cine.view.PeliculaView;
 
 /**
  *
@@ -131,6 +134,11 @@ public class CineView extends javax.swing.JFrame {
         btnUpdSalas.setText("Gestionar Salas");
 
         jButton1.setText("Ver Lista Peliculas");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jButton2.setText("Gestionar Horario");
 
@@ -285,6 +293,11 @@ public class CineView extends javax.swing.JFrame {
             borrarCamposCine();
         } 
     }//GEN-LAST:event_btnDelCineActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+     PeliculaView dialogPeliculas = new PeliculaView(this, true);
+     dialogPeliculas.setVisible(true);
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     public void addRowToJTable(){
         

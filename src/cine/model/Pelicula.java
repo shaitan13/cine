@@ -10,14 +10,14 @@ package cine.model;
  * @author RICARDO-PC
  */
 public class Pelicula {
-    private Integer idPelicula;
+    private String idPelicula;
     private String titulo;
     private String genero;
     private String clasificacion;
     private String formato;
-    private String decripcion;
+    private String descripcion;
 	
-    public Pelicula(Integer idPelicula, String titulo, String genero, String clasificacion, String formato,
+    public Pelicula(String idPelicula, String titulo, String genero, String clasificacion, String formato,
 			String decripcion) {
 		super();
 		this.idPelicula = idPelicula;
@@ -25,14 +25,14 @@ public class Pelicula {
 		this.genero = genero;
 		this.clasificacion = clasificacion;
 		this.formato = formato;
-		this.decripcion = decripcion;
+		this.descripcion = decripcion;
 	}
 
-	public Integer getidPelicula() {
+	public String getidPelicula() {
 		return idPelicula;
 	}
 
-	public void setidPelicula(Integer idPelicula) {
+	public void setidPelicula(String idPelicula) {
 		this.idPelicula = idPelicula;
 	}
 
@@ -68,12 +68,12 @@ public class Pelicula {
 		this.formato = formato;
 	}
 
-	public String getDecripcion() {
-		return decripcion;
+	public String getDescripcion() {
+		return descripcion;
 	}
 
-	public void setDecripcion(String decripcion) {
-		this.decripcion = decripcion;
+	public void setDescripcion(String descripcion) {
+		this.descripcion = descripcion;
 	}
 	
    
